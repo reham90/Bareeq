@@ -1138,9 +1138,137 @@ inset-inline-end: 0;
   font-size: 16px;
   padding: 30px 0;
 }
-.tk-logo{
-  margin-inline-start: 3px;
+
+/**              about us page               **/
+.inner-page .main{
+  background-color: var(--main-color);
+  height: 597px;
 }
+.inner-page .register-link{
+  background-color: rgba(151, 209, 215, 1);
+}
+.inner-page .register-link:hover{
+  background-color: var(--main-hover);
+}
+.inner-page .big-menu li a:hover{
+  color: var(--main-hover);
+  border-color: var(--main-hover);
+}
+.inner-page .login-link:hover{
+  color: var(--main-hover);
+}
+.inner-page .main-slider-img-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+.about-banner-text{
+  width: 471px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
+}
+.about-banner-text h2{
+text-align: center;
+text-transform: capitalize;
+color: #fff;
+font-size: 50px;
+font-family: "Jost-ExtraBold";
+margin: 0;
+}
+.about-banner-text p{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 29px;
+  margin: 0;
+}
+.about-image{
+  width: 415px;
+}
+.about-image img{
+  width: 100%;
+}
+.inner-page .services-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:35px 70px;
+}
+.inner-page .service-img{
+  width: 63px;
+  height: 63px;
+}
+.inner-page .service-block h3{
+  color: var(--main-hover);
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+.inner-page .service-note{
+  width: 285px;
+}
+.inner-page .service-img img{
+  width: auto;
+}
+.name{
+  color: var(--main-hover);
+  display: block;
+  text-align: start;
+  font-size: 28px;
+  margin: 0;
+}
+.products-section{
+  background-color: rgba(48, 163, 174, 1);
+  height: 659px;
+  display: flex;
+  align-items: center;
+}
+.products-content{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.pro-text{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:30px;
+}
+.pro-title{
+  color: var(--main-hover);
+  text-transform: capitalize;
+  font-size: 42px;
+  font-family: "Jost-Bold";
+margin: 0;
+}
+.pro-text p{
+  text-align: center;
+  color: var(--main-hover);
+  font-size: 18px;
+  margin: 0;
+  line-height: 26px;
+}
+.pro-img{
+  width: 536px;
+  position: absolute;
+  bottom: -173px;
+  inset-inline-end: 0;
+}
+.pro-img img{
+  width: 100%;
+}
+/**                 about us page               **/
 
 
 /*                             footer accordion                 */
@@ -1203,6 +1331,11 @@ inset-inline-end: 0;
   .services-section{
     padding: 50px 0 70px;
   }
+  .inner-page .services-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
   .footer-cont {
     display: flex;
     justify-content: center;
@@ -1615,8 +1748,38 @@ inset-inline-end: 0;
     position: relative;
    
   }
+  .products-section {
+    background-color: rgba(48, 163, 174, 1);
+    height: auto;
+    padding: 50px 0 70px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.products-content{
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pro-text{
+  width: 100%;
+}
+.pro-img {
+  width: 536px;
+  position: relative;
+  bottom: -30px;
+  inset-inline-end: 0;
+}
+  .inner-page .main {
+    
+    height: 100vh;
+}
   
-  
+.about-image{
+ display: none;
+}
+.inner-page .main-slider-img-cover{
+  top:350px;
+}
   .footer{
     padding: 50px 0;
   }
