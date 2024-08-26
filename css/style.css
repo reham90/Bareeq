@@ -450,7 +450,9 @@ font-family: "Jost-SemiBold";
 /*   services-section  */
 .services-section{
   padding: 100px 0 70px;
+  position: relative;
 }
+
 .services-title{
   color: var(--main-hover);
   text-align: center;
@@ -507,7 +509,14 @@ font-family: "Jost-SemiBold";
   width: 251px;
   height: 53px;
   border-radius: 8px;
-  
+  outline: none;
+  border: 0;
+}
+.more-services:focus{
+  background-color: var(--main-hover);
+  color: #fff;
+  outline: none;
+  border: 0;
 }
 .more-services:hover{
   background-color: var(--main-hover);
@@ -1271,6 +1280,180 @@ margin: 0;
 /**                 about us page               **/
 
 
+/**           services page          **/
+.services-list{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  position: absolute;
+  inset-inline-start: 60px;
+  top:50px;
+}
+.border-bottom{
+  border-bottom: 3px solid var(--main-color) !important;
+}
+.h-1122{
+  min-height: 1122px;
+}
+.serv-note{
+  color: var(--main-hover);
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  margin: 0 0 100px;
+}
+.serv-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:50px 70px;
+  margin: 0 auto 80px;
+  width: 710px;
+}
+.serv-block{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.serv-block h3{
+  color: var(--main-hover);
+  font-size: 20px;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.price{
+  font-size: 14px;
+}
+.serv-block p{
+  color: var(--main-hover);
+  font-size: 20px;
+  line-height: 29px;
+  text-align: start;
+  margin: 0;
+}
+.p-150{
+  padding: 150px 0;
+}
+.bg{
+  background-color: rgba(48, 163, 174, 1);
+}
+.border-bottom-white{
+  border-bottom: 3px solid #fff;
+}
+.more-serv-2{
+  color: var(--main-hover);
+  border: 1px solid var(--main-hover);
+  border-radius: 8px;
+}
+.contactt-section{
+  display: flex;
+  background-color: rgba(172, 218, 223, 1);
+}
+.contactt-img{
+  width: 729px;
+}
+.contactt-img img{
+  width: 100%;
+}
+.contactt-content{
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  align-items: center;
+  width: 729px;
+  
+}
+.contactt-content h2{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 42px;
+  font-family: "Jost-Bold";
+  color: var(--main-hover);
+  margin: 0 0 50px;
+ 
+}
+.contact-form{
+  width: 100%;
+}
+.form-record{
+  display: flex;
+  width: 100%;
+  gap:40px;
+}
+.form-input{
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 64px;
+  border: 1px solid var(--main-hover);
+  border-radius: 8px;
+  transition: 0.5s;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  color: var(--main-hover);
+  background-color: transparent;
+  text-transform: capitalize;
+  margin: 0 0 30px;
+}
+.form-input::placeholder{
+  font-size: 17px;
+  color: var(--main-hover);
+}
+.form-input:focus{
+  border: 1px solid var(--main-color);
+  outline: none;
+}
+.w-50{
+  width: 50% !important;
+}
+.textarea{
+  height: 197px;
+  padding: 20px ;
+}
+.join-section{
+  background-color: var(--main-color);
+  display: flex;
+  min-height: 444px;
+}
+.join-content{
+  width: 740px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:25px;
+}
+.join-title{
+  color: var(--main-hover);
+  font-size: 42px;
+  font-family: "Jost-Bold";
+  margin: 0;
+}
+.join-content span{
+  line-height: 26px;
+  font-size: 18px;
+  width: 291px;
+  display: block;
+  text-align: center;
+}
+.join-img{
+  width: 700px;
+  padding: 30px;
+  padding-inline-end: 50px;
+}
+.join-img img{
+  width: 100%;
+}
+
+/**           services page          **/
+
+
+
+
 /*                             footer accordion                 */
 .footer-accordion.nav-foot-header {
   margin-bottom: 0;
@@ -1331,6 +1514,40 @@ margin: 0;
   .services-section{
     padding: 50px 0 70px;
   }
+  .contactt-section{
+    flex-wrap: wrap;
+  }
+  .contactt-img {
+    width: 100%;
+}
+
+.contactt-content{
+  padding: 50px 20px;
+  width: 100%;
+}
+.form-record{
+  flex-wrap: wrap;
+  gap:0;
+}
+.contactt-content h2{
+  margin: 0;
+}
+.w-50{
+  width: 100% !important;
+}
+  .serv-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 70px 0px;
+    margin: 0 auto 80px;
+    width: 100%;
+}
+.services-list{
+  display: none;
+}
+.serv-note{
+  margin: 0 0 50px;
+}
   .inner-page .services-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1748,6 +1965,18 @@ margin: 0;
     position: relative;
    
   }
+  .join-section{
+    flex-wrap: wrap;
+    padding: 50px 0;
+  }
+  .join-content{
+    width: 100%;
+  }
+  .join-img {
+    width: 100%;
+    padding: 20px;
+    padding-inline-end: 20px;
+}
   .products-section {
     background-color: rgba(48, 163, 174, 1);
     height: auto;
