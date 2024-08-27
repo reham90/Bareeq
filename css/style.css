@@ -1451,8 +1451,157 @@ margin: 0;
 
 /**           services page          **/
 
+/**     book page              */
+
+.book-tabs{
+  width: 444px;
+  background-color: var(--main-color);
+  border-radius: 26px;
+  padding: 80px 30px;
+}
+.boook-tabs{
+  display: flex;
+  flex-direction: column;
+  border-bottom: none;
+  gap:30px;
+}
+.boook-tabs .nav-item.show .nav-link, .boook-tabs .nav-link.active{
+  background-color: var(--main-hover);
+  color: #fff;
+  border-bottom: none;
+}
+.boook-tabs .nav-link:focus, .book-tabs .nav-link{
+  width: 100%;
+  max-width: 100%;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgba(238, 238, 238, 1);
+  color: var(--main-hover);
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.boook-tabs .nav-link:focus, .boook-tabs .nav-link:hover{
+background-color: var(--main-hover);
+color: #fff;
+border: none;
+}
+.book-content{
+  width: 882px;
+}
+.booking-content{
+  display: flex;
+  padding: 0;
+  margin: 0 30px;
+  gap:60px;
+  border-radius: 26px;
+  box-shadow: 14px 14px 21px 0px rgba(0, 0, 0, 0.25);
+}
 
 
+
+.form-group input[type=text],
+.form-group input[type=email],
+.form-group input[type=tel],
+.form-group input[type=password],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  display: block;
+  padding: 12px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.73);
+  transition: 0.5s;
+  outline: none;
+  background: #fff;
+  box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+}
+
+.form-group input[type=text]:focus,
+.form-group input[type=email]:focus,
+.form-group input[type=tel]:focus,
+.form-group input[type=password]:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+  border: 1px solid var(--main-color);
+  outline: none;
+}
+
+.next{
+  display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    inset-inline-end: 0;
+    align-items: center;
+    width: 193px;
+    height: 53px;
+    background: var(--main-color);
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    font-family: "Jost-Bold";
+    font-size: 18px;
+    transition: 0.5s;
+    color: #fff;
+}
+.next:hover{
+  color: #fff;
+  background-color: var(--main-hover);
+}
+.next:focus{
+  color: #fff;
+  background-color: var(--main-hover);
+  outline: none;
+  border: 0;
+}
+
+.form-wizard {
+  position: relative;
+ 
+}
+
+
+.form-container {
+  clear: both;
+  display: none;
+  
+  padding: 100px 30px;
+ 
+}
+.form-container.active {
+  display: block;
+}
+
+.form-label{
+  color: var(--main-hover);
+  font-size: 18px;
+  margin: 0 0 15px;
+  text-align: start;
+  text-transform: capitalize;
+}
+.required:after{
+  content:"*";
+  color: var(--main-color);
+}
+.calender-grid{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap:10px 30px;
+  margin-top: 30px;
+}
+.day-name{
+  text-transform: capitalize;
+  color: var(--main-hover);
+  font-size: 18px;
+  display: block;
+  text-align: center;
+}
+/**     book page             */
 
 /*                             footer accordion                 */
 .footer-accordion.nav-foot-header {
@@ -1514,6 +1663,42 @@ margin: 0;
   .services-section{
     padding: 50px 0 70px;
   }
+  .booking-content{
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 20px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .boook-tabs .nav-link:focus, .book-tabs .nav-link{
+    width: 100%;
+    padding: 20px;
+    white-space: nowrap;
+  }
+  .boook-tabs{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+  .book-tabs{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    border-radius: 0;
+    background: #fff;
+  }
+  .book-content {
+    width: 100%;
+}
+.next{
+  bottom: -40px;
+}
+.form-container{
+  padding: 30px 0 50px;
+}
   .contactt-section{
     flex-wrap: wrap;
   }
